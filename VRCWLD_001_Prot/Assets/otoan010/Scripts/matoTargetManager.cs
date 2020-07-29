@@ -8,14 +8,20 @@ public class matoTargetManager : MonoBehaviour
     
     private Vector3 targetpos;
     public Text scoreText;
-    private int score = 0;
+    public static int score = 0;
 
     [SerializeField]
     private float targetSpeed;
 
+    public static int getscore()
+    {
+        return score;
+    }
+  
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         targetpos = transform.position;    
     }
 

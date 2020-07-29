@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/otoan010/Scenes/Main.unity
     guid: 028f7cae26994f247bd20d598ac3475e
+  - enabled: 1
+    path: Assets/otoan010/Scenes/Result.unity
+    guid: 1ed940a6b0665014cac073fabc19ff35
   m_configObjects: {}
