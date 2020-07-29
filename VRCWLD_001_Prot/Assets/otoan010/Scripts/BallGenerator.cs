@@ -15,6 +15,9 @@ public class BallGenerator : MonoBehaviour
     */
 
     public GameObject ballPrefab;
+    float countdown = 3f;
+    int count;
+    float span = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -23,15 +26,25 @@ public class BallGenerator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-         if(Input.GetMouseButtonDown(0))
+         if (countdown >= 0)
          {
+             countdown -= Time.deltaTime;
+             count = (int)countdown;
+         }
+         if (countdown <= 0)
+         {
+            span -= Time.deltaTime;
+            if(Input.GetMouseButtonDown(0) && span <= 0)
+            {
+             span = 1;
              GameObject ball = Instantiate(ballPrefab) as GameObject;
              Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
              Vector3 world = r.direction;
              ball.GetComponent<ShotBall>().Throw(world.normalized * 1500);
-         }    
+            }      
+         }
     }
 
     public void Throw(Vector3 dir)
