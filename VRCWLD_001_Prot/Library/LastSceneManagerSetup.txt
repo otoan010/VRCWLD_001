@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/otoan010/Scenes/Start.unity
+- path: Assets/otoan010/Scenes/Matoate/Matotate_Result.unity
   isLoaded: 1
   isActive: 1
