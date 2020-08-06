@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/otoan010/Scenes/Matoate/Matotate_Result.unity
+- path: Assets/otoan010/Scenes/TrenchFighter/Main_TrenchFighter.unity
   isLoaded: 1
   isActive: 1
