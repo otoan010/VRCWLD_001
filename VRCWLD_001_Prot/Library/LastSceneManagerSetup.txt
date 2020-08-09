@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/otoan010/Scenes/TrenchFighter/Main_TrenchFighter.unity
+- path: Assets/otoan010/Scenes/Test/Test_Main.unity
   isLoaded: 1
   isActive: 1
